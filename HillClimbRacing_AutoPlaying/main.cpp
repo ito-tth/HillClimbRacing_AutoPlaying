@@ -1,7 +1,6 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
-#include "match.h"
-#include"captureScreenMat.h"
+#include"function.h"
 
 #ifdef _DEBUG
 #pragma comment(lib, "opencv_world4120d.lib")
@@ -15,5 +14,6 @@ int main() {
 	//cv::imshow("スクリーンショット", screen);
 	match();
 	cv::waitKey(0);
+	cursorMove();
 	return 0;
 }
